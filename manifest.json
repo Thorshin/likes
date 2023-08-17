@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Likes and Dislikes",
+  "description": "Displays the number of likes and dislikes for YouTube videos in the thumbnail.",
+  "version": "1.0",
+
+  "action": {
+    "default_icon": "dislike.png",
+    "default_popup": "popup.html"
+  },
+			
+  "permissions": ["activeTab", "storage"],
+
+  "host_permissions": ["https://www.youtube.com/"],
+
+  "icons": {
+    "16": "dislike.png",
+    "32": "like.png",
+    "48": "like.png",
+    "128": "dislike.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
+	
