@@ -1,1 +1,1 @@
-A Youtube extension that adds like count of a Youtube video before clicking on it, next to the view count.
+A YouTube extension that displays the like count of a video beneath its thumbnail, allowing users to view it without clicking on the video.
